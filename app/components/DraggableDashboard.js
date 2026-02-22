@@ -16,6 +16,11 @@ import MemoryHealthCard from './MemoryHealthCard';
 import AgentProductivityCard from './AgentProductivityCard';
 import TokenSavingsCard from './TokenSavingsCard';
 import AgentLeaderboardCard from './AgentLeaderboardCard';
+import MultiModelCostCard from './MultiModelCostCard';
+import TaskQueueCard from './TaskQueueCard';
+import LiveCodingCard from './LiveCodingCard';
+import PerformanceDigestCard from './PerformanceDigestCard';
+import KnowledgeGraphCard from './KnowledgeGraphCard';
 
 const allCards = [
   { id: 'tokenBudget', component: TokenBudgetCard, title: '⚡ Token Budget', defaultWidth: 'md:col-span-2' },
@@ -33,6 +38,11 @@ const allCards = [
   { id: 'memoryHealth', component: MemoryHealthCard, title: '🧠 Memory Health', defaultWidth: '' },
   { id: 'tokenChart', component: TokenChart, title: '📊 Token Usage', defaultWidth: 'lg:col-span-1' },
   { id: 'goalsChart', component: GoalsChart, title: '🎯 Goals Progress', defaultWidth: 'lg:col-span-1' },
+  { id: 'modelCosts', component: MultiModelCostCard, title: '💰 Model Costs', defaultWidth: 'md:col-span-2' },
+  { id: 'taskQueue', component: TaskQueueCard, title: '📋 Task Queue', defaultWidth: 'md:col-span-2 lg:col-span-3' },
+  { id: 'liveCoding', component: LiveCodingCard, title: '🖥️ Live Coding', defaultWidth: 'md:col-span-2 lg:col-span-2' },
+  { id: 'performanceDigest', component: PerformanceDigestCard, title: '📈 Performance Digest', defaultWidth: 'md:col-span-2' },
+  { id: 'knowledgeGraph', component: KnowledgeGraphCard, title: '🕸️ Knowledge Graph', defaultWidth: 'md:col-span-2 lg:col-span-2' },
 ];
 
 const defaultOrder = allCards.map(c => c.id);

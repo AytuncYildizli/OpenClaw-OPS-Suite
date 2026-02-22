@@ -1,8 +1,8 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'MoltFire Dashboard',
-  description: 'Personal AI Assistant Control Center',
+  title: 'Mahmut OPS',
+  description: 'OpenClaw Operations Suite',
 }
 
 export const viewport = {

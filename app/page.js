@@ -18,7 +18,7 @@ export default function Dashboard() {
     const updateTime = () => {
       const now = new Date();
       setCurrentTime(now.toLocaleString('en-US', {
-        timeZone: 'America/New_York',
+        timeZone: 'Europe/Istanbul',
         month: 'short',
         day: 'numeric',
         year: 'numeric',
@@ -43,15 +43,15 @@ export default function Dashboard() {
               🔥
             </div>
             <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-white">MoltFire Dashboard</h1>
-              <p className="text-gray-400 text-sm md:text-base">Personal AI Assistant Control Center</p>
+              <h1 className="text-2xl md:text-3xl font-bold text-white">Mahmut OPS</h1>
+              <p className="text-gray-400 text-sm md:text-base">OpenClaw Operations Suite</p>
             </div>
           </div>
           <div className="flex items-center space-x-3 md:space-x-4">
             <NotificationCenter />
             <div className="text-right">
               <div className="text-sm md:text-lg font-semibold text-white">{currentTime}</div>
-              <div className="text-xs md:text-sm text-gray-400">Eastern Time</div>
+              <div className="text-xs md:text-sm text-gray-400">Turkey Time</div>
             </div>
           </div>
         </div>
@@ -84,6 +84,9 @@ export default function Dashboard() {
           <Link href="/integrations" className="px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg text-sm md:text-base font-semibold hover:opacity-90 transition-opacity flex items-center space-x-1 md:space-x-2">
             <span>🔌</span><span>Integrations</span>
           </Link>
+          <a href="https://openclaw-dashboard-bice.vercel.app" target="_blank" rel="noopener noreferrer" className="px-3 py-1.5 md:px-4 md:py-2 bg-gradient-to-r from-gray-600 to-gray-700 border border-gray-500 rounded-lg text-sm md:text-base font-semibold hover:opacity-90 transition-opacity flex items-center space-x-1 md:space-x-2">
+            <span>🐾</span><span>Main Dashboard ↗</span>
+          </a>
         </div>
       </div>
 
@@ -91,7 +94,7 @@ export default function Dashboard() {
       <DraggableDashboard />
 
       <footer className="mt-12 text-center text-gray-500 text-sm">
-        <p>MoltFire v1.0 • Built with Next.js • Last updated: {currentTime}</p>
+        <p>Mahmut OPS v1.0 • Built with Next.js • Last updated: {currentTime}</p>
       </footer>
     </div>
   );
