@@ -13,9 +13,15 @@ import TokenChart from './TokenChart';
 import GoalsChart from './GoalsChart';
 import IntegrationsCard from './IntegrationsCard';
 import MemoryHealthCard from './MemoryHealthCard';
+import AgentProductivityCard from './AgentProductivityCard';
+import TokenSavingsCard from './TokenSavingsCard';
+import AgentLeaderboardCard from './AgentLeaderboardCard';
 
 const allCards = [
   { id: 'tokenBudget', component: TokenBudgetCard, title: '⚡ Token Budget', defaultWidth: 'md:col-span-2' },
+  { id: 'agentProductivity', component: AgentProductivityCard, title: '🤖 Agent Fleet', defaultWidth: 'md:col-span-2' },
+  { id: 'tokenSavings', component: TokenSavingsCard, title: '💰 AI Savings', defaultWidth: '' },
+  { id: 'agentLeaderboard', component: AgentLeaderboardCard, title: '🏆 Leaderboard', defaultWidth: '' },
   { id: 'followUps', component: FollowUpsCard, title: '👥 Follow-ups', defaultWidth: '' },
   { id: 'calendar', component: CalendarWidget, title: '📅 Calendar', defaultWidth: '' },
   { id: 'learning', component: LearningStatsCard, title: '🧠 Learning', defaultWidth: '' },
